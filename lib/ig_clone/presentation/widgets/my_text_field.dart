@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:instagram_clone_app/config/theme/%20colors.dart';
 
 class MyTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -46,18 +48,10 @@ class MyTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           borderSide: const BorderSide(color: Colors.transparent),
         ),
-        // focusedBorder: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(12.w),
-        //   borderSide: const BorderSide(color: golbat140),
-        // ),
-        // errorBorder: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(12.w),
-        //   borderSide: const BorderSide(color: errorColor),
-        // ),
-        // focusedErrorBorder: OutlineInputBorder(
-        //   borderRadius: BorderRadius.circular(12.w),
-        //   borderSide: const BorderSide(color: errorColor),
-        // ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12.w),
+          borderSide: const BorderSide(color: AppColor.greyColor),
+        ),
         fillColor: Colors.grey.shade200,
         filled: true,
         hintText: hintText,
